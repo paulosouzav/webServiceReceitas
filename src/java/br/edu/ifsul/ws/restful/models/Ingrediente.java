@@ -1,19 +1,23 @@
 package br.edu.ifsul.ws.restful.models;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
 /**
  *
  * @author paulosouza
  */
-public class Ingrediente {
-    private int id;
-    private String nome;
 
-    public int getId() {
-        return id;
+@XmlRootElement(name="ingrediente")
+public class Ingrediente {
+    private String nome;
+    private String descricao;
+
+    public String getDescricao() {
+        return descricao;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 
     public String getNome() {

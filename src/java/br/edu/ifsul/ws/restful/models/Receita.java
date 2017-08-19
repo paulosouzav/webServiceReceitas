@@ -47,4 +47,8 @@ public class Receita {
         this.ingredientes = ingredientes;
     }
     
+    public void addIngrediente(Ingrediente ingrediente) {
+        this.ingredientes.add(ingrediente);
+    }
+    
 }
